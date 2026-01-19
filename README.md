@@ -70,31 +70,34 @@ cycle,time,voltage,current,temperature,capacity
 0,2.0,4.168,2.000,32.7,0.002
 ```
 
-Prerequisites
-Python 3.8 or higher
-pip package manager
+## Prerequisites
+- **Python 3.8 or higher**
+- **pip package manager**
 
 Step 1: Clone the Repository
-bash
-$ git clone https://github.com/yourusername/battery-degradation-dashboard.git
-cd battery-degradation-dashboard
+```bash
+$ git clone https://github.com/brendanlucas01/NASA-Battery-Degradation-Analysis-Dashboard.git
+cd NASA-Battery-Degradation-Analysis-Dashboard
+```
 
 Step 2: Create Virtual Environment
-bash
 # On macOS/Linux
+```bash
 $ python3 -m venv venv
 $ source venv/bin/activate
-
+```
 # On Windows
+```
 $ python -m venv venv
 $ venv\Scripts\activate
+```
 
 Step 3: Install Dependencies
-bash
+```bash
 $ pip install -r requirements.txt
-
+```
 requirements.txt:
-
+```
 apache
 streamlit==1.28.0
 pandas==2.1.0
@@ -103,15 +106,15 @@ matplotlib==3.8.0
 plotly==5.17.0
 scipy==1.11.0
 scikit-learn==1.3.0
-
+```
 ## 📚 Usage
 
 Run the Streamlit app:
-bash
+```bash
 $ streamlit run advanced_dashboard.py
+```
 
-
-📺 Dashboard Components
+## 📺 Dashboard Components
 1. Sidebar Controls
 Battery Selector: Dropdown to choose battery unit
 Cycle Range: Slider to select cycle range
@@ -122,14 +125,16 @@ Panel A: Discharge Curve Viewer
 Interactive Plotly charts showing voltage vs. time with zoom/pan controls and hover tooltips.
 
 Panel B: Capacity Degradation Analysis
-Track capacity fade over cycles with trend lines and statistical analysis.
+- Track capacity fade over cycles with trend lines and statistical analysis.
 
 Panel C: Statistical Summary
 Key metrics displayed in real-time:
 
-Initial Capacity
-Current Capacity
-State of Health (SoH)
-Cycles Completed
+- Initial Capacity
+- Current Capacity
+- State of Health (SoH)
+- Cycles Completed
+
 Panel D: Comparative Analysis
-Side-by-side battery comparison with normalized overlay plots.
+- Side-by-side battery comparison with normalized overlay plots.
+
